@@ -1,20 +1,4 @@
 * {
   box-sizing: border-box;
-}
-
-body {
-  display: grid;
-  grid-template-rows: 46px calc(100% + 200px) 46px;
-}
-
-app-header, .header {
-  grid-row: 1;
-}
-
-router-outlet, .container {
-  grid-row: 2;
-}
-
-app-footer, .footer {
-  grid-row: 3;
+  font-family: 'Titillium Web', sans-serif;
 }

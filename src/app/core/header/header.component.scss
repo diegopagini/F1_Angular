@@ -1,5 +1,6 @@
 nav {
   background-color: #010101;
+  height: 100%;
   .brand-logo {
     img {
       max-width: 100px;
@@ -7,4 +8,9 @@ nav {
       max-height: 100px;
     }
   }
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
 }
