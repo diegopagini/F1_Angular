@@ -145,8 +145,8 @@ export class DriversService {
     },
     {
       id: 20,
-      name: 'Valteri Bottas',
-      photo: 'valteri-bottas.jpg',
+      name: 'Valtteri Bottas',
+      photo: 'valtteri-bottas.jpg',
       pts: 197,
       data: 'Valtteri Viktor Bottas es un piloto de automovilismo finlandés .​ En la actualidad reside en Mónaco y desde 2017 compite para el equipo Mercedes en Fórmula 1.​ Anteriormente compitió en Williams como piloto titular desde 2013 hasta 2016.'
     },
