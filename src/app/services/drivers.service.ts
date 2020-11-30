@@ -20,7 +20,7 @@ export class DriversService {
     {
       id: 2,
       name: 'Antonio Giovinazzi',
-      photo: 'antonio-giovinazzi.jpg',
+      photo: 'anotnio-giovinazzi.jpg',
       pts: 4,
       data: 'Antonio Giovinazzi es un piloto de automovilismo de velocidad italiano.​ Fue subcampeón en F3 Europea y GP2 Series, y es piloto de Alfa Romeo desde la temporada 2019 de Fórmula 1.',
     },
@@ -41,7 +41,7 @@ export class DriversService {
     {
       id: 5,
       name: 'Daniil Kyvat',
-      photo: 'daniel-kyvat.jpg',
+      photo: 'daniel-kvyat.jpg',
       pts: 26,
       data: 'Daniil Viacheslavovich Kvyat es un piloto ruso de automovilismo de velocidad. En 2012 fue campeón de la Fórmula Renault 2.0 con 7 victorias. En 2013 compitió en Fórmula 3 Europea como invitado y se proclamó campeón de la cuarta temporada de GP3 Series. Debutó en Fórmula 1 en Scuderia Toro Rosso para la temporada 2014.'
     },
@@ -62,7 +62,7 @@ export class DriversService {
     {
       id: 8,
       name: 'George Russsel',
-      photo: 'george-russsel.jpg',
+      photo: 'george-russell.jpg',
       pts: 0,
       data: 'George Russell es un piloto británico de automovilismo.​ En 2017 fue campeón de la GP3 Series y en 2018 del Campeonato de Fórmula 2 de la FIA con ART. Desde 2019 forma parte del equipo Williams en Fórmula 1.​'
     },

@@ -1,1 +1,6 @@
-<p>drivers works!</p>
+<section class="drivers-container" *ngIf="drivers">
+  <app-driver-info
+    *ngFor="let driver of drivers"
+    [driver]="driver"
+  ></app-driver-info>
+</section>

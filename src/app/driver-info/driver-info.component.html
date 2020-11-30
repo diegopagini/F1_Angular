@@ -1,1 +1,22 @@
-<p>driver-info works!</p>
+<div class="row">
+  <div class="col s12">
+    <div class="card">
+      <div class="card-image">
+        <img src="../../assets/pilotos/{{ driver.photo }}" />
+        <span class="card-title">{{ driver.name }}</span>
+      </div>
+      <div class="card-content">
+        <p>{{ driver.data }}</p>
+      </div>
+      <div>
+        <button
+          class="btn waves-effect"
+          routerLink="/drivers/{{ driver.id }}"
+          routerLinkActive="active"
+        >
+          Más
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
