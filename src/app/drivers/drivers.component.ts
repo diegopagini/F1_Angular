@@ -9,6 +9,7 @@ import { DriversService } from '../services/drivers.service';
 })
 export class DriversComponent implements OnInit {
   drivers: Array<Driver>;
+  driversPts;
   temporal;
 
   constructor(private driversService: DriversService) {}
@@ -19,22 +20,36 @@ export class DriversComponent implements OnInit {
 
   getDrivers() {
     this.driversService.getDrivers().subscribe((response: Array<Driver>) => {
-      this.drivers = response;
-      let swapped = false;
-      for (let i = 0; i < this.drivers.length; i++) {
-        for (let j = 0; j < this.drivers.length; j++) {
-          if (this.drivers[j] > this.drivers[j + 1]) {
-            this.temporal = this.drivers[j];
-            this.drivers[j] = this.drivers[j + 1];
-            this.drivers[j + 1] = this.temporal;
-            swapped = true;
-          }
+      this.drivers = response.sort(function(a,b) {
+        if(a.pts < b.pts) {
+          return 1;
         }
-        if (swapped === false) {
-          break;
+        if (a.pts > b.pts) {
+          return -1
         }
-      }
+        return 0;
+      })
+      //Woooooo funcionio, It works! Genial!
+
+      // let swapped = false;
+
+      // response.filter((el) => {
+      //   return (this.driversPts = el.pts);
+      // });
+      // for (let i = 0; i < this.driversPts.length; i++) {
+      //   for (let j = 0; j < this.driversPts.length; j++) {
+      //     if (this.driversPts[j] > this.driversPts[j + 1]) {
+      //       this.temporal = this.driversPts[j];
+      //       this.driversPts[j] = this.driversPts[j + 1];
+      //       this.driversPts[j + 1] = this.temporal;
+      //       swapped = true;
+      //     }
+      //   }
+      //   if (swapped === false) {
+      //     break;
+      //   }
+      // }
     });
-    return this.drivers
+    // return this.driversPts;
   }
 }
