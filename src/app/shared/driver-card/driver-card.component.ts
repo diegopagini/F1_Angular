@@ -25,10 +25,4 @@ export class DriverCardComponent implements OnInit {
       this.drivers = Response;
     });
   }
-
-  // getDriver() {
-  //   this.driverService.getDrivers().subscribe((Response: Array<Driver>) => {
-  //     this.drivers = Response;
-  //   });
-  // }
 }
